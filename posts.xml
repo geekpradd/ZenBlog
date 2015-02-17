@@ -1,0 +1,33 @@
+<xml>
+	<post>
+		<title>Welcome to ZenBlog</title>
+		<excerpt>What is it and what is it meant for?</excerpt>
+		<author>Pradipta</author>
+		<date>17th Febuary 2015</date>
+		<content><![CDATA[
+			<p>Hey there fellow GitHub/Internet citizen. Welcome to ZenBlog. ZenBlog is, for the lack of a better word, a minimal blog system meant for hackers. ZenBlog is not meant for replacing Ghost, Jekyll or Wordpress. It serves a different purpose</p>
+
+			<p>What purpose you'll ask? Well ZenBlog is meant for use in webapps as a news supplement. Many web products have a 'news' section or a blog. Most of the time, this "blog" looks way different than the normal site. ZenBlog fits in here. You use the same CSS and layout as your other files except that you have some AngularJS directives in your HTML. ZenBlog looks for a posts.xml file and renders your blog.</p>
+
+			<p>There are reasons for using xml. To make a new post, you edit the xml file providing necessary data through tags. This means that there is no need for a database and no need for a back end (server) language. Everything is done using Javascript.</p>
+
+			<p>Due to this XML requirment, ZenBlog is very clumsy when you are embedding videos or images or code. What it is incredibly useful for though, is writing short posts discussing some changes in your product. ZenBlog is incredibly easy to implement and you don't need to use a CMS. Any change you want to make, make it yourself in the HTML and Javascript code</p>
+
+			<h2>Grab It!</h2>
+			<p>You can download ZenBlog from <a>GitHub</a> or by using Bower. All information is in the GitHub repo.</p>
+			]]></content>
+		
+	</post>
+	<post>
+		<title>Setting up ZenBlog</title>
+		<excerpt>How to make it work</excerpt>
+		<date>19 Febuary 2015</date>
+		<author>Pradipta(geekpradd)</author>
+		<content><![CDATA[
+				<h2>Installing ZenBlog</h2>
+				<p>You can either grab the minimum code release or you can get the full variant powered by Bootstrap. The minimum release is useful if you want to set the CSS yourself and the full variant if all you are looking for is a lightweight client side blog system and are willing to write your posts in XML for that</p>
+			]]>
+		</content>
+	</post>
+</xml>
+	

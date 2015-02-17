@@ -1,0 +1,35 @@
+<header class="intro-header" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>{{blogTitle}}</h1>
+                        <hr class="small">
+                        <span class="subheading">{{blogMotto}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-preview" ng-repeat="post in posts">
+                <a href="#{{post.url}}">
+                    <h2 class="post-title">
+                        {{post.title}}
+                    </h2>
+                    <h3 class="post-subtitle">
+                    {{post.excerpt}}
+                    </h3>
+                    <p class="post-meta">Posted By <a href="#">{{post.author}} on {{post.date}}</p>
+                    <hr>
+            </div>
+                
+                
+                <!-- Pager -->
+                
+            </div>
+        </div>
+    </div>
