@@ -10,4 +10,6 @@ Due to this XML requirment, ZenBlog is very clumsy when you are embedding videos
 
 ###How To Use
 
-This section is coming.
+This section is coming. I have to write the entire usage pattern and fix some code.
+
+Check out this demo till then: http://geekpradd.github.io/ZenBlog/#/
