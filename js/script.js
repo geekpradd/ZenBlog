@@ -1,4 +1,6 @@
-var app = angular.module('myapp',['ngRoute']); //define that we are using ngRoute
+var app = angular.module(BLOG_NAME,['ngRoute']); //define that we are using ngRoute
+//Important: App name defined in ng-app attribute of html tag
+//and app name defined in config.js should be EXACTLY SAME
 
 var translate = function(xml) {
 		 var x2js = new X2JS();
@@ -9,7 +11,8 @@ var translate = function(xml) {
 var replaceAll = function(find, replace, str) {
   		return str.replace(new RegExp(find, 'g'), replace);
 }
-
+//Angular Code to change title
+//To-Do: Revert title on pressing back
 app.run(['$rootScope', '$route', function($rootScope, $route) {
     $rootScope.$on('$routeChangeSuccess', function(newVal, oldVal) {
         if (oldVal !== newVal) {
@@ -20,7 +23,7 @@ app.run(['$rootScope', '$route', function($rootScope, $route) {
     });
 }]);
 
-//URL settings
+//URL settings via ngRoute
 app.config(function($routeProvider){
 	$routeProvider
 		.when('/',{
@@ -42,11 +45,10 @@ app.config(function($routeProvider){
 		 	controller: 'pageController'
 			
 		 });
-	
-
 });//URL Mappings
 
 //----CONTROLLERS--
+//mainController: Runs after blog initialisation
 app.controller('mainController',function($scope, $http, postData){
 	$scope.blogTitle = BLOG_NAME;
 	$scope.blogMotto = BLOG_MOTTO;
@@ -87,7 +89,8 @@ var mainResolve = {
         });
     }
 };
-//---POST CONTROLLER
+//---POST CONTROLLER---
+//Runs when a post is clicked
 app.controller('postController', function($scope,$routeParams,$http,$sce, postData){
 	$scope.blogTitle = BLOG_NAME;
 	$scope.blogMotto = BLOG_MOTTO;
@@ -123,13 +126,13 @@ app.controller('postController', function($scope,$routeParams,$http,$sce, postDa
 		$scope.excerpt = j[num].excerpt;
 		$scope.date = j[num].date;
 	}
-	
 	angular.element(document).ready(function(){
 		$scope.setVars();
 	});
 	
 });
 //CUSTOM PAGE CONTROLLER
+//Runs for each custom page in pages folder
 app.controller('pageController', function($scope){
 	$scope.blogTitle = BLOG_NAME;
 	$scope.blogMotto = BLOG_MOTTO;
@@ -138,6 +141,7 @@ app.controller('pageController', function($scope){
 		document.title = $scope.title;
 	});
 });
+//Default Controller: Doesn't do much
 app.controller('configController',  function($scope){
 	$scope.blogTitle = BLOG_NAME;
 	$scope.blogMotto = BLOG_MOTTO;
