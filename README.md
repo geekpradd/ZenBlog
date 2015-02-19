@@ -10,6 +10,15 @@ Due to this XML requirment, ZenBlog is very clumsy when you are embedding videos
 
 ###How To Use
 
-This section is coming. I have to write the entire usage pattern and fix some code.
+Now, usage of this system can be done in many ways. You just need to include the core angular code located in `script.js`. Also xml2json.min.js should be present and the AngularJS js file and angular route js files loaded using googleapis. 
 
-Check out this demo till then: http://geekpradd.github.io/ZenBlog/#/
+For templating, look at the index.html file located in the repo. There is a config.js file that will include the Blog name and Blog tagline. The name declared in config.js SHOULD be equal to the ng-app attribute of the index.html file.
+
+This repo will have two dev branches: The first branch will contain a minimum implementaion of the system and the second will use Bootstrap for a blog system.
+
+More instructions on how to install are coming soon.
+
+Also, a PHP repo to create the XML file from `.md` markdown files is also coming. This will help in creating more serious blogs if you have PHP enabled on your server.
+
+###Demo 
+Check out this demo : http://geekpradd.github.io/ZenBlog/#/
