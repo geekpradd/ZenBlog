@@ -1,4 +1,4 @@
-var app = angular.module(BLOG_NAME,['ngRoute']); //define that we are using ngRoute
+var app = angular.module("blog",['ngRoute']); //define that we are using ngRoute
 //Important: App name defined in ng-app attribute of html tag
 //and app name defined in config.js should be EXACTLY SAME
 
