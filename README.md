@@ -1,4 +1,4 @@
-##ZenBlog: A Minimal Blog System Meant For Hackers
+## ZenBlog: A Minimal Blog System 
 
 ZenBlog is a very minimal blog system built on AngularJS. ZenBlog is not meant for replacing Ghost, Jekyll or Wordpress. It serves a different purpose and it is completely client side.
 
@@ -8,7 +8,7 @@ There are reasons for using xml. To make a new post, you edit the xml file provi
 
 Due to this XML requirment, ZenBlog is very clumsy when you are embedding videos or images or code. What it is incredibly useful for though, is writing short posts discussing some changes in your product. ZenBlog is incredibly easy to implement and you don't need to use a CMS. Any change you want to make, make it yourself in the HTML and Javascript code.
 
-###How To Use
+### How To Use
 
 Firstly, download the repository contents from [this link](https://github.com/geekpradd/ZenBlog/archive/master.zip) and extract the zip to your developent environment.
 
@@ -23,9 +23,9 @@ Now that the Blog names have been set, open `posts.xml`. Demo data has already b
 
 You can change the styling of the main page by changing the CSS if you want to and you can easily integrate this with your own website (Just change the CSS).
 
-###Demo 
+### Demo 
 Check out this demo : http://geekpradd.github.io/ZenBlog/#/
 
-###About
+### About
 
 Created By Pradipta. Copyright 2015. MIT Licensed.
